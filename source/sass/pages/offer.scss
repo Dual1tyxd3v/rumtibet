@@ -1,0 +1,54 @@
+.offer {
+  background-color: var(--color-grey);
+  padding: 8rem 0 10rem;
+
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+    gap: 9rem;
+  }
+
+  &__title {
+    margin-bottom: 0.8rem;
+  }
+
+  &__subtitle {
+    margin-bottom: 4rem;
+  }
+
+  &__text {
+    margin-bottom: 4rem;
+  }
+
+  &__pros {
+    margin-bottom: 4rem;
+  }
+
+  &__img {
+    width: 25rem;
+
+    &--1 {
+      border-radius: 0px 50px 0px 50px;
+    }
+
+    &--2 {
+      border-radius: 50px 0px 50px 0px;
+    }
+
+    &--3 {
+      border-radius: 50px 0px 50px 0px;
+    }
+
+    &--4 {
+      border-radius: 0px 50px 0px 50px;
+    }
+  }
+
+  &__images {
+    padding: 4rem 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+    align-content: start;
+  }
+}
