@@ -1,0 +1,23 @@
+.popular {
+  padding: 8rem 0 10rem;
+
+  &__wrapper {
+    text-align: center;
+  }
+
+  &__title {
+    margin-bottom: 0.8rem;
+  }
+
+  &__subtitle {
+    margin-bottom: 5rem;
+  }
+
+  &__cards {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+    margin-bottom: 5rem;
+  }
+}
