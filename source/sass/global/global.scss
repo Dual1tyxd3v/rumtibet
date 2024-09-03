@@ -1,0 +1,44 @@
+:root {
+  --color-white: rgb(253, 253, 253);
+  --color-green: rgb(26, 62, 62);
+  --color-black: rgb(24, 18, 30);
+}
+
+*,
+*::after,
+*::before {
+  padding: 0;
+  margin: 0;
+  background-repeat: no-repeat;
+  box-sizing: border-box;
+  font-family: 'Manrope', sans-serif;
+  font-style: normal;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+.visually-hidden {
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  border: none;
+  position: absolute;
+  clip: rect(0, 0, 0, 0);
+}

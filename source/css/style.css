@@ -1,0 +1,93 @@
+@font-face {
+  font-family: "Next Art";
+  font-weight: 700;
+  src: url(../fonts/NEXT_ART_Bold.otf);
+}
+@font-face {
+  font-family: "Nunito";
+  font-weight: 600;
+  src: url(../fonts/NunitoSans_SemiBold.ttf);
+}
+@font-face {
+  font-family: "Nunito";
+  font-weight: 400;
+  src: url(../fonts/NunitoSans_Regular.ttf);
+}
+@font-face {
+  font-family: "Nunito";
+  font-weight: 700;
+  src: url(../fonts/NunitoSans_Bold.ttf);
+}
+@font-face {
+  font-family: "Nunito";
+  font-weight: 800;
+  src: url(../fonts/NunitoSans_ExtraBold.ttf);
+}
+:root {
+  --color-white: rgb(253, 253, 253);
+  --color-green: rgb(26, 62, 62);
+  --color-black: rgb(24, 18, 30);
+}
+
+*,
+*::after,
+*::before {
+  padding: 0;
+  margin: 0;
+  background-repeat: no-repeat;
+  box-sizing: border-box;
+  font-family: "Manrope", sans-serif;
+  font-style: normal;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+.visually-hidden {
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  border: none;
+  position: absolute;
+  clip: rect(0, 0, 0, 0);
+}
+
+.button {
+  padding: 1.6rem 3.6rem;
+  font-family: Nunito;
+  font-weight: 6000;
+  font-size: 1.6rem;
+  line-height: 2rem;
+  background-color: var(--color-green);
+  border: 1px solid transparent;
+  border-radius: 4px;
+  transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out, border 0.2s ease-in-out;
+}
+.button:hover {
+  color: var(--color-green);
+  background-color: var(--color-white);
+  border-radius: 1px solid --color-green;
+}
+.button--small {
+  padding: 1.2rem 2.4rem;
+}
+.button--white {
+  background-color: var(--color-white);
+}
+/*# sourceMappingURL=style.css.map */

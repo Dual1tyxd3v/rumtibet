@@ -1,0 +1,25 @@
+.button {
+  padding: 1.6rem 3.6rem;
+  font-family: Nunito;
+  font-weight: 6000;
+  font-size: 1.6rem;
+  line-height: 2rem;
+  background-color: var(--color-green);
+  border: 1px solid transparent;
+  border-radius: 4px;
+  transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out, border 0.2s ease-in-out;
+
+  &:hover {
+    color: var(--color-green);
+    background-color: var(--color-white);
+    border-radius: 1px solid (--color-green);
+  }
+
+  &--small {
+    padding: 1.2rem 2.4rem;
+  }
+
+  &--white {
+    background-color: var(--color-white);
+  }
+}
