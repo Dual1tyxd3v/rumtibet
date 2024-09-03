@@ -1,0 +1,62 @@
+.about {
+  padding: 10rem 0;
+
+  &__wrapper {
+    display: flex;
+    gap: 12rem;
+  }
+
+  &__images {
+    position: relative;
+    width: 48rem;
+    min-width: 48rem;
+    height: 52.6rem;
+  }
+
+  &__img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 35rem;
+    border-radius: 24px;
+    cursor: pointer;
+
+    &:last-child {
+      top: 12.6rem;
+      left: 13rem;
+    }
+
+    &:focus {
+      z-index: 2;
+    }
+  }
+
+  &__info {
+    color: var(--color-black);
+  }
+
+  &__title {
+    font-size: 2.4rem;
+    font-weight: 400;
+    font-weight: 'Nunito';
+    line-height: 2rem;
+    color: var(--color-yellow);
+    margin-bottom: 0.8rem;
+  }
+
+  &__subtitle {
+    font-weight: 800;
+    font-family: 'Nunito';
+    font-size: 3.2rem;
+    line-height: 120%;
+    margin-bottom: 4rem;
+  }
+
+  &__text {
+    font-family: 'Nunito';
+    font-size: 1.8rem;
+    font-weight: 400;
+    line-height: 150%;
+    margin-bottom: 4rem;
+  }
+}

@@ -96,7 +96,7 @@ img {
 }
 
 .wrapper {
-  width: 118rem;
+  max-width: 118rem;
   margin: 0 auto;
 }
 
@@ -182,6 +182,7 @@ img {
 .main {
   background-image: url(../img/main_bg.jpeg);
   height: 100vh;
+  min-height: 49rem;
   padding: 1.6rem 0 8.2rem;
 }
 .main__wrapper {
@@ -197,5 +198,59 @@ img {
   line-height: 150%;
   letter-spacing: 0.1rem;
   text-transform: lowercase;
+}
+
+.about {
+  padding: 10rem 0;
+}
+.about__wrapper {
+  display: flex;
+  gap: 12rem;
+}
+.about__images {
+  position: relative;
+  width: 48rem;
+  min-width: 48rem;
+  height: 52.6rem;
+}
+.about__img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 35rem;
+  border-radius: 24px;
+  cursor: pointer;
+}
+.about__img:last-child {
+  top: 12.6rem;
+  left: 13rem;
+}
+.about__img:focus {
+  z-index: 2;
+}
+.about__info {
+  color: var(--color-black);
+}
+.about__title {
+  font-size: 2.4rem;
+  font-weight: 400;
+  font-weight: "Nunito";
+  line-height: 2rem;
+  color: var(--color-yellow);
+  margin-bottom: 0.8rem;
+}
+.about__subtitle {
+  font-weight: 800;
+  font-family: "Nunito";
+  font-size: 3.2rem;
+  line-height: 120%;
+  margin-bottom: 4rem;
+}
+.about__text {
+  font-family: "Nunito";
+  font-size: 1.8rem;
+  font-weight: 400;
+  line-height: 150%;
+  margin-bottom: 4rem;
 }
 /*# sourceMappingURL=style.css.map */
