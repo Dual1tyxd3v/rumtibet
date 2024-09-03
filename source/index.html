@@ -12,7 +12,7 @@
 
 <body>
   <main class="main">
-    <div class="wrapper">
+    <div class="wrapper main__wrapper">
       <header class="header">
         <a href="#" class="header__logo">
           <img src="./img/logo.png" alt="Logo" class="header__img">
@@ -29,6 +29,36 @@
         </nav>
         <button class="button button--small">Консультация</button>
       </header>
+
+      <h1 class="main__title">Насладись прогулкой в горах<br>с командой единомышленников</h1>
+
+      <form class="main__form form">
+        <div class="form__field">
+          <select id="location" name="location" class="form__select">
+            <option disabled selected hidden>Локация для тура</option>
+            <option>Россия</option>
+            <option>США</option>
+            <option>Китай</option>
+            <option>Европа</option>
+            <option>Африка</option>
+          </select>
+          <label for="location" class="form__label">выберите из списка</label>
+        </div>
+        <div class="form__field">
+          <input type="date" name="date" id="date" class="form__date" value="test">
+          <label for="date" class="form__label">укажите диапазон</label>
+        </div>
+        <div class="form__field">
+          <select id="members" name="members" class="form__select">
+            <option selected disabled hidden>Участники</option>
+            <option>4</option>
+            <option>8</option>
+            <option>12</option>
+          </select>
+          <label for="members" class="form__label">минимум 4 человека</label>
+        </div>
+        <button type="submit" class="button">Найти программу</button>
+      </form>
     </div>
   </main>
   <script src="./js/script.js"></script>
