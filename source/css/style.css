@@ -27,6 +27,7 @@
   --color-white: rgb(253, 253, 253);
   --color-green: rgb(26, 62, 62);
   --color-black: rgb(24, 18, 30);
+  --color-yellow: rgb(242, 190, 34);
 }
 
 *,
@@ -70,24 +71,64 @@ img {
 
 .button {
   padding: 1.6rem 3.6rem;
-  font-family: Nunito;
-  font-weight: 6000;
+  font-family: "Nunito";
+  font-weight: 600;
   font-size: 1.6rem;
   line-height: 2rem;
   background-color: var(--color-green);
   border: 1px solid transparent;
   border-radius: 4px;
   transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out, border 0.2s ease-in-out;
+  color: var(--color-white);
+  cursor: pointer;
 }
 .button:hover {
   color: var(--color-green);
   background-color: var(--color-white);
-  border-radius: 1px solid --color-green;
+  border: 1px solid var(--color-green);
 }
 .button--small {
-  padding: 1.2rem 2.4rem;
+  padding: 1.1rem 2.4rem;
 }
 .button--white {
   background-color: var(--color-white);
+}
+
+.wrapper {
+  width: 118rem;
+  margin: 0 auto;
+}
+
+.header {
+  display: flex;
+  gap: 4.9rem;
+  align-items: center;
+  justify-content: space-between;
+}
+.header__img {
+  width: 13.7rem;
+}
+.header__nav ul {
+  display: flex;
+  gap: 2.4rem;
+}
+.header__link {
+  color: var(--color-white);
+  font-size: 1.8rem;
+  font-family: "Nunito";
+  font-weight: 600;
+  line-height: 2.5rem;
+  transition: color 0.2s ease-in-out, -webkit-text-decoration 0.2s ease-in-out;
+  transition: color 0.2s ease-in-out, text-decoration 0.2s ease-in-out;
+  transition: color 0.2s ease-in-out, text-decoration 0.2s ease-in-out, -webkit-text-decoration 0.2s ease-in-out;
+}
+.header__link:hover {
+  color: var(--color-yellow);
+  text-decoration: underline;
+}
+
+.main {
+  background-image: url(../img/main_bg.jpeg);
+  height: 100vh;
 }
 /*# sourceMappingURL=style.css.map */
