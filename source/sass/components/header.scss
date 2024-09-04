@@ -9,9 +9,83 @@
     width: 13.7rem;
   }
 
-  &__nav ul {
-    display: flex;
-    gap: 2.4rem;
+  &__burger {
+    display: none;
+
+    @media (max-width: 670px) {
+      display: block;
+      position: fixed;
+      top: 6.6rem;
+      right: 4.1rem;
+      z-index: 10;
+      width: 4.8rem;
+      height: 4.8rem;
+      border: none;
+      background-color: transparent;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      gap: 0.6rem;
+
+      & span {
+        width: 4.2rem;
+        height: 0.6rem;
+        border-radius: 100px;
+        background-color: var(--color-white);
+        display: block;
+        transition: transform 0.3s ease-in-out;
+
+        &:last-child {
+          transform-origin: right;
+          transform: scaleX(0.5);
+          margin-right: 0.3rem;
+        }
+      }
+
+      &--active {
+        & span {
+          &:last-child {
+            transform: scaleX(0);
+          }
+
+          &:first-child {
+            transform: translateY(1.2rem) rotate(45deg);
+          }
+
+          &:nth-child(2) {
+            transform: rotate(-45deg);
+          }
+        }
+      }
+    }
+  }
+
+  &__nav {
+    & ul {
+      display: flex;
+      gap: 2.4rem;
+    }
+
+    @media (max-width: 670px) {
+      position: fixed;
+      inset: 0;
+      z-index: 5;
+      background-color: var(--color-green);
+      padding: 10rem 3.1rem;
+      transform-origin: right;
+      transform: scaleX(0);
+      transition: transform 0.3s ease-in-out;
+
+      &--active {
+        transform: scaleX(1);
+      }
+
+      & ul {
+        flex-direction: column;
+        gap: 3.2rem;
+      }
+    }
   }
 
   &__link {
@@ -25,6 +99,36 @@
     &:hover {
       color: var(--color-yellow);
       text-decoration: underline;
+    }
+
+    @media (max-width: 670px) {
+      font-size: 2.8rem;
+      line-height: 3.6rem;
+      display: flex;
+      gap: 2rem;
+
+      &::before {
+        content: '';
+        height: 2rem;
+        width: 1.2rem;
+        display: block;
+        background-color: var(--color-white);
+        mask-image: url(../img/link_arrow.svg);
+        background-position: center center;
+        background-size: 1.2rem 2rem;
+        background-repeat: no-repeat;
+        margin-top: 0.6rem;
+      }
+
+      &:hover::before,
+      &:focus::before {
+        background-color: var(--color-yellow);
+      }
+    }
+  }
+  @media (max-width: 670px) {
+    &__button {
+      display: none;
     }
   }
 }

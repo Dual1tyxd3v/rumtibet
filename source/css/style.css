@@ -59,7 +59,7 @@ html {
 }
 @media (max-width: 670px) {
   html {
-    font-size: 32.5%;
+    font-size: 32%;
   }
 }
 
@@ -219,9 +219,71 @@ img {
 .header__img {
   width: 13.7rem;
 }
+.header__burger {
+  display: none;
+}
+@media (max-width: 670px) {
+  .header__burger {
+    display: block;
+    position: fixed;
+    top: 6.6rem;
+    right: 4.1rem;
+    z-index: 10;
+    width: 4.8rem;
+    height: 4.8rem;
+    border: none;
+    background-color: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 0.6rem;
+  }
+  .header__burger span {
+    width: 4.2rem;
+    height: 0.6rem;
+    border-radius: 100px;
+    background-color: var(--color-white);
+    display: block;
+    transition: transform 0.3s ease-in-out;
+  }
+  .header__burger span:last-child {
+    transform-origin: right;
+    transform: scaleX(0.5);
+    margin-right: 0.3rem;
+  }
+  .header__burger--active span:last-child {
+    transform: scaleX(0);
+  }
+  .header__burger--active span:first-child {
+    transform: translateY(1.2rem) rotate(45deg);
+  }
+  .header__burger--active span:nth-child(2) {
+    transform: rotate(-45deg);
+  }
+}
 .header__nav ul {
   display: flex;
   gap: 2.4rem;
+}
+@media (max-width: 670px) {
+  .header__nav {
+    position: fixed;
+    inset: 0;
+    z-index: 5;
+    background-color: var(--color-green);
+    padding: 10rem 3.1rem;
+    transform-origin: right;
+    transform: scaleX(0);
+    transition: transform 0.3s ease-in-out;
+  }
+  .header__nav--active {
+    transform: scaleX(1);
+  }
+  .header__nav ul {
+    flex-direction: column;
+    gap: 3.2rem;
+  }
 }
 .header__link {
   color: var(--color-white);
@@ -236,6 +298,35 @@ img {
 .header__link:hover {
   color: var(--color-yellow);
   text-decoration: underline;
+}
+@media (max-width: 670px) {
+  .header__link {
+    font-size: 2.8rem;
+    line-height: 3.6rem;
+    display: flex;
+    gap: 2rem;
+  }
+  .header__link::before {
+    content: "";
+    height: 2rem;
+    width: 1.2rem;
+    display: block;
+    background-color: var(--color-white);
+    -webkit-mask-image: url(../img/link_arrow.svg);
+            mask-image: url(../img/link_arrow.svg);
+    background-position: center center;
+    background-size: 1.2rem 2rem;
+    background-repeat: no-repeat;
+    margin-top: 0.6rem;
+  }
+  .header__link:hover::before, .header__link:focus::before {
+    background-color: var(--color-yellow);
+  }
+}
+@media (max-width: 670px) {
+  .header__button {
+    display: none;
+  }
 }
 
 .form {
