@@ -1,0 +1,23 @@
+.social {
+  width: 2.6rem;
+  height: 2.6rem;
+  display: block;
+  background-position: center center;
+  background-size: 2.6rem 2.6rem;
+
+  &--telegram {
+    background-image: url(../img/telegram.svg);
+  }
+
+  &--whatsapp {
+    background-image: url(../img/whatsapp.svg);
+  }
+
+  &--pinterest {
+    background-image: url(../img/pinterest.svg);
+  }
+
+  &--skype {
+    background-image: url(../img/skype.svg);
+  }
+}
