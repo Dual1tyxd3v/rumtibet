@@ -47,6 +47,21 @@ html {
   color: var(--color-white);
   background-color: var(--color-white);
 }
+@media (max-width: 1100px) {
+  html {
+    font-size: 50%;
+  }
+}
+@media (max-width: 870px) {
+  html {
+    font-size: 40%;
+  }
+}
+@media (max-width: 670px) {
+  html {
+    font-size: 32.5%;
+  }
+}
 
 ul {
   list-style: none;
@@ -101,6 +116,11 @@ img {
 .wrapper {
   max-width: 118rem;
   margin: 0 auto;
+}
+@media (max-width: 1180px) {
+  .wrapper {
+    padding: 0 2rem;
+  }
 }
 
 .title {
@@ -279,6 +299,13 @@ img {
   overflow: hidden;
   border-radius: 32px;
 }
+@media (max-width: 1100px) {
+  .pop-card {
+    width: 30rem;
+    height: 39.375rem;
+    letter-spacing: -1px;
+  }
+}
 .pop-card__img {
   position: absolute;
   inset: 0;
@@ -301,6 +328,11 @@ img {
   align-items: center;
   transition: opacity 0.2s ease-in-out;
 }
+@media (max-width: 1100px) {
+  .pop-card__rate {
+    top: 4rem;
+  }
+}
 .pop-card__rate::before {
   content: "";
   margin-right: 0.74rem;
@@ -321,10 +353,11 @@ img {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  align-items: flex-start;
+  align-items: space-between;
   height: 9rem;
   overflow: hidden;
   transition: height 0.2s ease-in-out;
+  width: 100%;
 }
 .pop-card:hover .pop-card__info {
   height: 100%;
@@ -334,6 +367,7 @@ img {
   align-items: center;
   justify-content: space-between;
   margin-bottom: 3.8rem;
+  width: 100%;
 }
 .pop-card__title {
   font-size: 2.4rem;
@@ -341,6 +375,11 @@ img {
   line-height: 120%;
   font-weight: 700;
   letter-spacing: -1.4px;
+}
+@media (max-width: 1100px) {
+  .pop-card__title {
+    font-size: 2rem;
+  }
 }
 .pop-card__subtitle {
   font-size: 1.4rem;
@@ -358,12 +397,25 @@ img {
   border-radius: 4px;
   background: rgba(255, 255, 255, 0.3);
 }
+@media (max-width: 1100px) {
+  .pop-card__price {
+    padding: 0.5rem 1.2rem;
+    font-size: 1.6rem;
+    width: 6.1rem;
+    min-width: 6.1rem;
+  }
+}
 .pop-card__text {
   font-size: 1.6rem;
   font-weight: 400;
   line-height: 150%;
   font-family: "Nunito";
   margin-bottom: auto;
+}
+@media (max-width: 1100px) {
+  .pop-card__text {
+    display: none;
+  }
 }
 
 .post {
@@ -376,6 +428,11 @@ img {
   gap: 2.4rem;
   border-radius: 10px;
   transition: box-shadow 0.2s ease-in-out, transform 0.2s ease-in-out;
+}
+@media (max-width: 1100px) {
+  .post {
+    width: 54rem;
+  }
 }
 .post:hover {
   box-shadow: 0px 0px 15px 0px rgba(24, 18, 30, 0.12);
@@ -627,6 +684,7 @@ img {
 }
 .photo__img img {
   transition: filter 0.2s ease-in-out;
+  height: 25rem;
 }
 .photo__img::before {
   content: "";
@@ -663,6 +721,11 @@ img {
   z-index: 2;
   border-radius: 6px;
   background-color: var(--color-white);
+}
+@media (max-width: 1100px) {
+  .news__wrapper {
+    padding: 4rem 5rem;
+  }
 }
 .news__info {
   width: 38rem;

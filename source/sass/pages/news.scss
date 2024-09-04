@@ -11,6 +11,10 @@
     z-index: 2;
     border-radius: 6px;
     background-color: var(--color-white);
+
+    @media (max-width: 1100px) {
+      padding: 4rem 5rem;
+    }
   }
 
   &__info {
