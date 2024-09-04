@@ -535,4 +535,57 @@ img {
        column-gap: 2rem;
   margin-bottom: 5rem;
 }
+
+.photo {
+  padding: 8rem 0 10rem;
+}
+.photo__wrapper {
+  text-align: center;
+}
+.photo__title {
+  margin-bottom: 0.8rem;
+}
+.photo__subtitle {
+  margin-bottom: 4rem;
+}
+.photo__content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+  margin-bottom: 5rem;
+}
+.photo__img {
+  height: 25rem;
+  width: auto;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 6px;
+  cursor: pointer;
+  position: relative;
+}
+.photo__img img {
+  transition: filter 0.2s ease-in-out;
+}
+.photo__img::before {
+  content: "";
+  width: 1.8rem;
+  height: 1.8rem;
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-image: url(../img/zoom.svg);
+  background-position: center center;
+  z-index: 2;
+  opacity: 0;
+  transition: opacity 0.2s ease-in-out;
+}
+.photo__img:hover img {
+  filter: brightness(0.8);
+}
+.photo__img:hover::before {
+  opacity: 1;
+}
 /*# sourceMappingURL=style.css.map */
