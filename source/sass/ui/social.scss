@@ -5,6 +5,12 @@
   background-position: center center;
   background-size: 2.6rem 2.6rem;
 
+  @media (max-width: 670px) {
+    width: 5.2rem;
+    height: 5.2rem;
+    background-size: 5.2rem 5.2rem;
+  }
+
   &--telegram {
     background-image: url(../img/telegram.svg);
   }
