@@ -116,6 +116,11 @@ img {
 .button--small {
   padding: 1.1rem 2.4rem;
 }
+@media (max-width: 670px) {
+  .button--small {
+    padding: 2.4rem 4.8rem;
+  }
+}
 .button--white {
   background-color: var(--color-white);
 }
@@ -142,6 +147,12 @@ img {
   line-height: 2rem;
   color: var(--color-yellow);
 }
+@media (max-width: 670px) {
+  .title {
+    font-size: 2.8rem;
+    line-height: 4rem;
+  }
+}
 
 .subtitle {
   font-weight: 800;
@@ -150,6 +161,11 @@ img {
   line-height: 120%;
   color: var(--color-black);
 }
+@media (max-width: 670px) {
+  .subtitle {
+    font-size: 4.8rem;
+  }
+}
 
 .text {
   font-family: "Nunito";
@@ -157,6 +173,11 @@ img {
   font-weight: 400;
   line-height: 150%;
   color: var(--color-black);
+}
+@media (max-width: 670px) {
+  .text {
+    font-size: 3.2rem;
+  }
 }
 
 .pros {
@@ -681,11 +702,26 @@ img {
   display: flex;
   gap: 12rem;
 }
+@media (max-width: 670px) {
+  .about__wrapper {
+    flex-direction: column;
+    gap: 8rem;
+  }
+}
 .about__images {
   position: relative;
   width: 48rem;
   min-width: 48rem;
   height: 52.6rem;
+}
+@media (max-width: 670px) {
+  .about__images {
+    order: 2;
+    width: 100%;
+    min-width: auto;
+    position: static;
+    height: auto;
+  }
 }
 .about__img {
   position: absolute;
@@ -695,9 +731,21 @@ img {
   border-radius: 24px;
   cursor: pointer;
 }
+@media (max-width: 670px) {
+  .about__img {
+    position: static;
+    width: 100%;
+    border-radius: 4.8rem;
+  }
+}
 .about__img:last-child {
   top: 12.6rem;
   left: 13rem;
+}
+@media (max-width: 670px) {
+  .about__img:first-child {
+    display: none;
+  }
 }
 .about__img:focus {
   z-index: 2;
@@ -705,11 +753,26 @@ img {
 .about__title {
   margin-bottom: 0.8rem;
 }
+@media (max-width: 670px) {
+  .about__title {
+    margin-bottom: 1.6rem;
+  }
+}
 .about__subtitle {
   margin-bottom: 4rem;
 }
+@media (max-width: 670px) {
+  .about__subtitle {
+    margin-bottom: 4.8rem;
+  }
+}
 .about__text {
   margin-bottom: 4rem;
+}
+@media (max-width: 670px) {
+  .about__text {
+    margin-bottom: 4.8rem;
+  }
 }
 
 .offer {
