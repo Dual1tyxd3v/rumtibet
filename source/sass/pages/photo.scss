@@ -1,16 +1,30 @@
 .photo {
   padding: 8rem 0 10rem;
 
+  @media (max-width: 670px) {
+    padding: 10rem 0;
+  }
+
   &__wrapper {
     text-align: center;
   }
 
   &__title {
     margin-bottom: 0.8rem;
+
+    @media (max-width: 670px) {
+      margin-bottom: 1.6rem;
+      text-align: left;
+    }
   }
 
   &__subtitle {
     margin-bottom: 4rem;
+
+    @media (max-width: 670px) {
+      margin-bottom: 6.4rem;
+      text-align: left;
+    }
   }
 
   &__content {
@@ -19,6 +33,18 @@
     justify-content: center;
     gap: 2rem;
     margin-bottom: 5rem;
+
+    @media (max-width: 670px) {
+      flex-wrap: nowrap;
+      overflow-y: auto;
+      justify-content: flex-start;
+      margin-bottom: 6.4rem;
+
+      &::-webkit-scrollbar {
+        width: 0;
+        height: 0;
+      }
+    }
   }
 
   &__img {
@@ -32,6 +58,17 @@
     & img {
       transition: filter 0.2s ease-in-out;
       height: 25rem;
+    }
+
+    @media (max-width: 670px) {
+      height: 50rem;
+      flex-shrink: 0;
+
+      & img {
+        height: 50rem;
+        width: 50rem;
+        object-fit: cover;
+      }
     }
 
     &::before {
