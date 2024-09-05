@@ -184,6 +184,11 @@ img {
   display: flex;
   align-items: center;
 }
+@media (max-width: 670px) {
+  .pros {
+    align-items: flex-start;
+  }
+}
 .pros--gid::before {
   background-image: url(../img/pros--gid.svg);
 }
@@ -196,6 +201,11 @@ img {
 .pros:not(:last-child) {
   margin-bottom: 4rem;
 }
+@media (max-width: 670px) {
+  .pros:not(:last-child) {
+    margin-bottom: 6.4rem;
+  }
+}
 .pros::before {
   content: "";
   display: block;
@@ -206,12 +216,27 @@ img {
   background-size: 5rem 5rem;
   margin-right: 1.6rem;
 }
+@media (max-width: 670px) {
+  .pros::before {
+    width: 10rem;
+    height: 10rem;
+    min-width: 10rem;
+    background-size: 10rem 10rem;
+    margin-right: 3.2rem;
+  }
+}
 .pros__title {
   font-family: "Nunito";
   color: var(--color-black);
   font-size: 1.8rem;
   line-height: 2rem;
   font-weight: 700;
+}
+@media (max-width: 670px) {
+  .pros__title {
+    font-size: 3.6rem;
+    margin-bottom: 1rem;
+  }
 }
 .pros__text {
   font-family: "Nunito";
@@ -220,6 +245,11 @@ img {
   font-size: 1.4rem;
   line-height: 2rem;
   letter-spacing: -1px;
+}
+@media (max-width: 670px) {
+  .pros__text {
+    font-size: 2.8rem;
+  }
 }
 
 .social {
@@ -779,6 +809,15 @@ img {
   background-color: var(--color-grey);
   padding: 8rem 0 10rem;
 }
+@media (max-width: 670px) {
+  .offer {
+    padding: 10rem 0;
+  }
+  .offer__button {
+    display: block;
+    margin: 0 auto;
+  }
+}
 .offer__wrapper {
   display: flex;
   justify-content: space-between;
@@ -787,14 +826,34 @@ img {
 .offer__title {
   margin-bottom: 0.8rem;
 }
+@media (max-width: 670px) {
+  .offer__title {
+    margin-bottom: 1.6rem;
+  }
+}
 .offer__subtitle {
   margin-bottom: 4rem;
+}
+@media (max-width: 670px) {
+  .offer__subtitle {
+    margin-bottom: 6.4rem;
+  }
 }
 .offer__text {
   margin-bottom: 4rem;
 }
+@media (max-width: 670px) {
+  .offer__text {
+    margin-bottom: 6.4rem;
+  }
+}
 .offer__pros {
   margin-bottom: 4rem;
+}
+@media (max-width: 670px) {
+  .offer__pros {
+    margin-bottom: 6.4rem;
+  }
 }
 .offer__img {
   width: 25rem;
@@ -811,6 +870,11 @@ img {
   grid-template-columns: 1fr 1fr;
   gap: 1rem;
   align-content: start;
+}
+@media (max-width: 670px) {
+  .offer__images {
+    display: none;
+  }
 }
 
 .popular {
