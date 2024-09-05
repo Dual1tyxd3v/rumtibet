@@ -1,14 +1,25 @@
 .main {
   background-image: url(../img/main_bg.jpeg);
+  background-position: center center;
+  background-size: cover;
   height: 100vh;
   min-height: 49rem;
   padding: 1.6rem 0 8.2rem;
+
+  @media (max-width: 670px) {
+    padding: 3.2rem 0 10rem;
+  }
 
   &__wrapper {
     display: flex;
     flex-direction: column;
     height: 100%;
     gap: 4rem;
+
+    @media (max-width: 670px) {
+      gap: 0;
+      justify-content: flex-start;
+    }
   }
 
   &__title {
@@ -18,5 +29,10 @@
     line-height: 150%;
     letter-spacing: 0.1rem;
     text-transform: lowercase;
+
+    @media (max-width: 670px) {
+      font-size: 5.6rem;
+      margin-bottom: 6.4rem;
+    }
   }
 }

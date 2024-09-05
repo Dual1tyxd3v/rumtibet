@@ -8,11 +8,21 @@
   justify-content: stretch;
   gap: 2.4rem;
 
+  @media (max-width: 670px) {
+    border-radius: 0px;
+    padding: 0;
+    background-color: transparent;
+  }
+
   &__field {
     display: flex;
     flex-direction: column;
     flex: 1;
     gap: 0.8rem;
+
+    @media (max-width: 670px) {
+      display: none;
+    }
   }
 
   &__select,

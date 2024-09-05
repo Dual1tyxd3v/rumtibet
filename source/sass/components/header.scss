@@ -7,6 +7,10 @@
 
   &__img {
     width: 13.7rem;
+
+    @media (max-width: 670px) {
+width: 16.8rem;
+    }
   }
 
   &__burger {
