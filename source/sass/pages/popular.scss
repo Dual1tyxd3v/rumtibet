@@ -1,16 +1,42 @@
 .popular {
   padding: 8rem 0 10rem;
 
+  @media (max-width: 670px) {
+    padding: 10rem 0;
+
+    &__button {
+      display: block;
+      margin: 0 auto;
+    }
+
+    &__slider {
+      width: 100%;
+      overflow: hidden;
+    }
+  }
+
   &__wrapper {
     text-align: center;
+
+    @media (max-width: 670px) {
+      text-align: left;
+    }
   }
 
   &__title {
     margin-bottom: 0.8rem;
+
+    @media (max-width: 670px) {
+      margin-bottom: 1.6rem;
+    }
   }
 
   &__subtitle {
     margin-bottom: 5rem;
+
+    @media (max-width: 670px) {
+      margin-bottom: 6.4rem;
+    }
   }
 
   &__cards {
@@ -19,5 +45,18 @@
     gap: 2rem;
     flex-wrap: wrap;
     margin-bottom: 5rem;
+
+    @media (max-width: 670px) {
+      flex-wrap: nowrap;
+      gap: 4rem;
+      margin-bottom: 6.4rem;
+      justify-content: flex-start;
+      overflow-y: auto;
+
+      &::-webkit-scrollbar {
+        width: 0;
+        height: 0;
+      }
+    }
   }
 }
