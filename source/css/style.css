@@ -1202,6 +1202,15 @@ img {
 .news {
   position: relative;
 }
+@media (max-width: 670px) {
+  .news {
+    padding: 0 3.2rem 10rem;
+  }
+  .news__button {
+    align-self: flex-start;
+    margin-bottom: 4.8rem;
+  }
+}
 .news__wrapper {
   box-shadow: 0px 0px 15px 0px rgba(24, 18, 30, 0.12);
   padding: 4rem 10rem;
@@ -1218,22 +1227,53 @@ img {
     padding: 4rem 5rem;
   }
 }
+@media (max-width: 670px) {
+  .news__wrapper {
+    padding: 4.8rem;
+    display: block;
+  }
+}
 .news__info {
   width: 38rem;
   min-width: 38rem;
+}
+@media (max-width: 670px) {
+  .news__info {
+    width: 100%;
+  }
 }
 .news__title {
   font-size: 1.8rem;
   margin-bottom: 0.8rem;
 }
+@media (max-width: 670px) {
+  .news__title {
+    font-size: 3.2rem;
+    line-height: 4rem;
+    margin-bottom: 1.6rem;
+  }
+}
 .news__subtitle {
   font-size: 2.6rem;
+}
+@media (max-width: 670px) {
+  .news__subtitle {
+    font-size: 4.8rem;
+    line-height: 120%;
+    margin-bottom: 3.6rem;
+  }
 }
 .news__field {
   display: flex;
   align-items: flex-end;
   margin-bottom: 0.8rem;
   gap: 1.6rem;
+}
+@media (max-width: 670px) {
+  .news__field {
+    flex-direction: column;
+    align-items: stretch;
+  }
 }
 .news__label {
   display: flex;
@@ -1246,6 +1286,13 @@ img {
   font-weight: 600;
   line-height: 2rem;
 }
+@media (max-width: 670px) {
+  .news__label {
+    font-size: 3.2rem;
+    line-height: 4rem;
+    gap: 1.6rem;
+  }
+}
 .news__text {
   font-family: "Nunito";
   color: var(--color-black);
@@ -1253,6 +1300,12 @@ img {
   font-weight: 600;
   line-height: 1.8rem;
   letter-spacing: -1px;
+}
+@media (max-width: 670px) {
+  .news__text {
+    font-size: 2.8rem;
+    line-height: 3.6rem;
+  }
 }
 .news__input {
   border-radius: 4px;
@@ -1274,6 +1327,15 @@ img {
 }
 .news__input::placeholder {
   color: var(--color-green);
+}
+@media (max-width: 670px) {
+  .news__input {
+    font-size: 2.8rem;
+    line-height: 4rem;
+    width: 100%;
+    padding: 2.8rem 3.2rem;
+    margin-bottom: 1.6rem;
+  }
 }
 .news__link {
   color: inherit;
