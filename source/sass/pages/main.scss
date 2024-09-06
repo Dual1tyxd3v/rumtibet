@@ -32,7 +32,13 @@
 
     @media (max-width: 670px) {
       font-size: 5.6rem;
+      width: 100%;
       margin-bottom: 6.4rem;
+
+      & span {
+        text-transform: uppercase;
+        word-break: break-all;
+      }
     }
   }
 }

@@ -857,7 +857,12 @@ img {
 @media (max-width: 670px) {
   .main__title {
     font-size: 5.6rem;
+    width: 100%;
     margin-bottom: 6.4rem;
+  }
+  .main__title span {
+    text-transform: uppercase;
+    word-break: break-all;
   }
 }
 
